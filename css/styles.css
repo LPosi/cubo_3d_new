@@ -199,7 +199,7 @@ main {
   background: transparent;
   cursor: pointer;
 }
-@media (min-width: 770px) {
+@media (min-width: 870px) {
   .navbar-toggler {
     display: none;
   }
@@ -229,7 +229,7 @@ main {
   border-bottom: none;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 869px) {
   .navbar > .container-fluid {
     flex-wrap: wrap;
   }

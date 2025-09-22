@@ -136,6 +136,7 @@ main {
 /*Nav*/
 
 .navbar {
+  width: 100%;
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
@@ -198,7 +199,7 @@ main {
   background: transparent;
   cursor: pointer;
 }
-@media (min-width: 670px) {
+@media (min-width: 770px) {
   .navbar-toggler {
     display: none;
   }
@@ -228,7 +229,7 @@ main {
   border-bottom: none;
 }
 
-@media (max-width: 669px) {
+@media (max-width: 769px) {
   .navbar > .container-fluid {
     flex-wrap: wrap;
   }

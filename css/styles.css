@@ -11,7 +11,7 @@ html {
 /*Body*/
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Story Script", sans-serif;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -291,7 +291,7 @@ footer {
 /*Section*/
 
 section {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #2a1704b3;
   margin: 2rem 0;
   padding: 2rem;
   border-radius: 8px;
@@ -300,17 +300,18 @@ section {
   color: white;
 }
 section h1,
-h2 {
+h2,
+h3 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
 }
 section p {
   text-align: center;
   margin-bottom: 1.5rem;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 section ul {
   list-style: none;
@@ -346,6 +347,10 @@ section div img {
 
 .img-medium {
   max-width: 50%;
+}
+
+.section-text {
+  font-size: 1.8rem;
 }
 
 @keyframes fadeIn {

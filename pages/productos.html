@@ -23,7 +23,6 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header>
       <nav class="navbar">
@@ -71,48 +70,117 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <section>
-        <h1 class="section-title">Productos Destacados</h1>
-        <p class="section-text">
+      <section class="container my-5">
+        <h1 class="section-title text-center mb-4">Nuestros Productos</h1>
+        <p class="section-text text-center">
           Desde figuras decorativas hasta piezas técnicas, todo fabricado bajo
           demanda.
         </p>
-        <div class="image-content">
-          <img src="../images/aviones.png" alt="Modelo 3D de avión" />
+        <div
+          id="productosCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <img
+                src="../images/F-18_avion.PNG"
+                class="d-block mx-auto img-fluid"
+                alt="Modelo 3D de avión"
+                style="max-height: 400px; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#producto1Modal"
+              />
+              <div class="mt-3">
+                <h5>Modelo 3D de avión</h5>
+                <p class="fw-bold">$35.000</p>
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img
+                src="../images/lampara_espiralada.PNG"
+                class="d-block mx-auto img-fluid"
+                alt="Florero impreso en 3D"
+                style="max-height: 400px; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#producto2Modal"
+              />
+              <div class="mt-3">
+                <h5>Florero impreso en 3D</h5>
+                <p class="fw-bold">$8.000</p>
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+            <div class="carousel-item text-center">
+              <img
+                src="../images/soporte_celu.png"
+                class="d-block mx-auto img-fluid"
+                alt="Soporte para celular impreso en 3D"
+                style="max-height: 400px; cursor: pointer"
+                data-bs-toggle="modal"
+                data-bs-target="#producto3Modal"
+              />
+              <div class="mt-3">
+                <h5>Soporte para celular</h5>
+                <p class="fw-bold">$5.000</p>
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#productosCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#productosCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </section>
-
-      <section>
-        <h1 class="section-title">Línea Creativa</h1>
-        <ul class="section-list">
-          <li>Figuras de colección (personajes, animales)</li>
-          <li>Joyería personalizada (diseños geométricos)</li>
-          <li>Decoración para el hogar (organizadores, lámparas, floreros)</li>
-        </ul>
-        <div class="image-content">
-          <img src="../images/florero.png" alt="Florero impreso en 3D" />
+      <div class="modal fade" id="producto1Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <img
+              src="../images/aviones.png"
+              class="img-fluid"
+              alt="Modelo 3D de avión"
+            />
+          </div>
         </div>
-      </section>
-
-      <section>
-        <h1 class="section-title">Línea Técnica</h1>
-        <ul class="section-list">
-          <li>Soportes y repuestos para electrodomésticos</li>
-          <li>Prototipos de productos (envases, mecanismos)</li>
-          <li>Piezas para robots y drones</li>
-        </ul>
-        <div class="image-content">
-          <img
-            src="../images/soporte_celu.png"
-            alt="Soporte para celular impreso en 3D"
-            class="img-medium"
-          />
+      </div>
+      <div class="modal fade" id="producto2Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <img
+              src="../images/florero.png"
+              class="img-fluid"
+              alt="Florero impreso en 3D"
+            />
+          </div>
         </div>
-      </section>
+      </div>
+      <div class="modal fade" id="producto3Modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <img
+              src="../images/soporte_celu.png"
+              class="img-fluid"
+              alt="Soporte para celular impreso en 3D"
+            />
+          </div>
+        </div>
+      </div>
     </main>
-
     <footer>
       <div>
         <p class="footer-text">
@@ -120,7 +188,6 @@
         </p>
       </div>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
